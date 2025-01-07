@@ -1,0 +1,48 @@
+<meta charset = "UTF-8">
+<!--
+Escreva um algoritmo que leia três lados quaisquer. Identifique se esses lados podem formar um triângulo. Caso os lados formem um triângulo, identifique se o triângulo é equilátero, escaleno ou isósceles.
+
+Regra: Suponha os lados a, b e c.
+É triangulo somente se a condição for satisfeita: (a+b)>c e (a+c)>b e (b+c)>a
+Equilátero: todos os lados iguais. 
+Escaleno: todos os lados diferentes.
+Isósceles: dois lados são iguais
+-->
+<script>
+	alert ("Triangulos!");
+
+	var a = +prompt("Digite o primeiro valor: ");
+	var b = +prompt("Digite o segundo valor: ");
+	var c = +prompt("Digite o terceiro valor: ");
+
+	var triangulo = (a+b)>c && (a+c)>b && (b+c)>a;
+
+	var equilatero = (a == b == c);
+	var escaleno = (a != b != c);
+	var isosceles = (a == b || c == b || a == c);
+
+
+	document.write("è possivel formar un triangulo: " + triangulo + "<br>");
+	document.write("É um triangulo equilatero: " + equilatero + "<br>");
+	document.write("É um triangulo escaleno: " + escaleno + "<br>");
+	document.write("É um triangulo isosceles:  " + isosceles + "<br>");
+
+</script>
+
+<!--
+	var l1 = +prompt("Digite o lado 1: ");
+	var l2 = +prompt("Digite o lado 2: ");
+	var l3 = +prompt("Digite o lado 3: ");
+
+	var triangulo = (l1+l2)>l3 && (l2+l3)>l1 && (l1+l3)>l2;
+	document.write("Pode formar um triangulo: " + triangulo + "<br>");
+	
+	var teq = (l1 == l2) && (l2 == l3);
+	document.write("É um triangulo equilatero?: " + teq + "<br>");
+	
+	var tes = (l1 != l2) && (l2 != l3) && (l1 !=l3);
+	document.write("É um triangulo escaleno?: " + tes + "<br>");
+
+	var tis = ((l1 == l2) && (l1 != l3) || (l1 == l3) && (l1 !=l2) || (l2 == l3) && (l1 != l3));
+	document.write("É um triangulo isosceles?:  " + tis);
+-->
