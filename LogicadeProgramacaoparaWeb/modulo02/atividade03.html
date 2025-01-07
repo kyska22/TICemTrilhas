@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<!--
+Escreva um algoritmo que calcule a média de um aluno numa dada disciplina e imprima o resultado.
+Regra: Durante o semestre o aluno faz 3 avaliações com notas de 0 a 10. É considerado aprovado, o aluno que consegue nota igual ou superior a 7. Se este ficar com nota menor que 7 e maior ou igual a 5, será considerado de recuperação. No entanto, se a nota for abaixo de 5, o aluno será considerado reprovado e deverá repetir o semestre.
+-->
+<script type="text/javascript">
+	
+	alert("Validação das notas")
+
+	var nota1 = +prompt("Digite o valor da nota1: ");
+	var nota2 = +prompt("Digite o valor da nota2: ");
+	var nota3 = +prompt("Digite o valor da nota3: ");
+
+	if ([nota1, nota2, nota3].some(nota => nota < 0 || nota > 10)) {
+        document.write("Erro: As notas devem estar entre 0 e 10.");
+    }
+	
+	var media = (nota1 + nota2 + nota3) / 3;
+
+    if (media >= 7) {
+        situacao = "Aprovado";
+    } else if (media >= 5) {
+        situacao = "Recuperação";
+    } else {
+        situacao = "Reprovado";
+    }
+
+    // Imprime o resultado
+    document.write("Su nota media é: "+media+" Se encuetntra: "+situacao);		
+
+
+</script>

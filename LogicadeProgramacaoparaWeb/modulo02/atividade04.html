@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<!--
+Escreva o algoritmo "Programa Solidário". O doador deve clicar nas opções (mostradas abaixo) para efetuar a sua doação. Imprima o resultado na tela com o valor da doação e uma mensagem de agradecimento. Utilize a estrutura Switch...Case.
+[1] para doar R$10
+[2] para doar R$25
+[3] para doar R$50
+[4] para doar outros valores
+[5] para cancelar
+-->
+
+<script type="text/javascript">
+
+	alert("--------------------------- \n Programa Solidário \n ---------------------------- \n [1] para doar R$10 \n [2] para doar R$ 25 \n [3] para doas R$ 50 \n [4] para doar outros valores \n [5] para cancelar ");
+
+	var valor;
+	var numero = +prompt("Digite o número para doar: ");
+
+	switch (numero) {
+	case 1:
+		valor = 10;
+		break;
+	case 2:
+		valor = 25;
+		break;
+	case 3:
+		valor = 50;
+		break;
+	case 4:
+		valor = +prompt("Digite o número´para doar: ")
+	
+	default:
+		valor = 0;
+		break;
+	}
+
+	document.write("----------------------------------" + "<br>");
+	document.write("Sua doação foi de R$: " + valor + "<br>");
+	document.write("Muito OBRIGADO " + "<br>");
+	document.write("----------------------------------" + "<br>");
+
+
+</script>

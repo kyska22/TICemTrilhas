@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<!--
+Escreva um programa que leia um número inteiro. Se o número lido for positivo, escreva uma mensagem indicando se ele é par ou ímpar. Se o número for negativo, escreva a seguinte mensagem “Este número não é positivo”.
+-->
+<script type="text/javascript">
+	
+	alert("Analisador de número!")
+
+	var numero = +prompt("Digite o número: ");
+
+	if (numero < 0) {
+		document.write("Este número não é positivo");
+	}
+	else {
+		if (numero % 2 == 0) {
+			document.write("É um numero par.");
+		} else {
+			document.write("É um numero impar.");
+		}
+	}
+
+</script>

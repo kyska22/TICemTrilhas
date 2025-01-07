@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<!--
+Faça um algoritmo que receba o valor do salário de uma pessoa e o valor de um financiamento pretendido. Caso o financiamento seja menor ou igual a 5 vezes o salário da pessoa, o algoritmo deverá escrever "Financiamento Concedido"; senão, ele deverá escrever "Financiamento Negado".
+Independente de conceder ou não o financiamento, o algoritmo escreverá depois a frase "Obrigado por nos consultar."
+.
+-->
+<script type="text/javascript">
+	
+	alert("Analisador de financiamento!")
+
+	var salario = +prompt("Digite o valor do salario: ");
+	var financiamento = +prompt("Digite o valor do financiamento: ");
+
+	if (financiamento <= 5*salario) {
+		document.write("Financiamento Concedido <br>");
+		document.write("Obrigado por nos consultar");	
+	}
+	else {
+		document.write("Financiamento Negado <br>");
+		document.write("Obrigado por nos consultar");			
+	}
+
+</script>
